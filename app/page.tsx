@@ -14,14 +14,11 @@ export default function Home() {
         }}
       >
         <div className="absolute inset-0 bg-black opacity-70 text-white text-5xl flex justify-start items-start px-4 py-16 item-center">
-          {" "}
-          {/* Increased padding */}
+
           <div className="flex flex-col ml-[10%] justify-center my-auto">
             <div>Elevate Your Brand&apos;s</div>
             <div>Presence</div>
             <div className="text-2xl mt-14">
-              {" "}
-              {/* Increased margin */}
               Forge ahead in the digital realm with Delhi&apos;s finest marketing
               mavens.
             </div>
@@ -30,27 +27,27 @@ export default function Home() {
       </div>
 
       {/* Recent Work Section */}
-      <div className="flex flex-col mx-10 gap-y-10 text-black mt-24">
-        <div className="text-4xl font-bold">Recent Work</div>
-        <div className="grid grid-cols-3">
-          <div className="flex flex-col gap-y-5">
-            <Image
-              className="rounded-sm"
-              src={"/ache.webp.webp"}
-              width={400}
-              height={400}
-              alt={"achiever"}
-            />
-            <div className="text-2xl font-bold">Lead Generation</div>
-            <div className="text-lg font-light">
-              Generated 500,000+ leads in top cities for &quot;Achievers Club&quot;,
-              promoting Forever Living Products&apos;s nutraceuticals. Achieved 40%+
-              positive lead feedback and 2% enrollment rate. Ongoing Meta ad
-              campaign scaling effectively.
-            </div>
+      <div className="flex flex-col mx-4 md:mx-10 gap-y-10 text-black mt-8 md:mt-24"> 
+      <div className="text-2xl md:text-4xl font-bold">Recent Work</div> 
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8"> 
+        <div className="flex flex-col gap-y-5">
+          <Image
+            className="rounded-sm"
+            src={"/ache.webp.webp"}
+            width={400}
+            height={400}
+            alt={"achiever"}
+          />
+          <div className="text-lg md:text-2xl font-bold">Lead Generation</div>
+          <div className="text-sm md:text-base font-light">
+            Generated 500,000+ leads in top cities for &quot;Achievers Club&quot;,
+            promoting Forever Living Products&apos;s nutraceuticals. Achieved 40%+
+            positive lead feedback and 2% enrollment rate. Ongoing Meta ad
+            campaign scaling effectively.
           </div>
         </div>
       </div>
+    </div>
 
       {/* About Us Section */}
       <div className="text-3xl text-black mx-10 py-20 flex flex-col md:flex-row items-center justify-center gap-10">
