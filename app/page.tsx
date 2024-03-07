@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Home() {
   return (
-    <main classname>
+    <main>
       {/* Hero Section */}
       <div
         className="relative"
@@ -17,12 +17,12 @@ export default function Home() {
           {" "}
           {/* Increased padding */}
           <div className="flex flex-col ml-[10%] justify-center my-auto">
-            <div>Elevate Your Brand's</div>
+            <div>Elevate Your Brand&apos;s</div>
             <div>Presence</div>
             <div className="text-2xl mt-14">
               {" "}
               {/* Increased margin */}
-              Forge ahead in the digital realm with Delhi's finest marketing
+              Forge ahead in the digital realm with Delhi&apos;s finest marketing
               mavens.
             </div>
           </div>
@@ -43,8 +43,8 @@ export default function Home() {
             />
             <div className="text-2xl font-bold">Lead Generation</div>
             <div className="text-lg font-light">
-              Generated 500,000+ leads in top cities for "Achievers Club,"
-              promoting Forever Living Products's nutraceuticals. Achieved 40%+
+              Generated 500,000+ leads in top cities for &quot;Achievers Club&quot;,
+              promoting Forever Living Products&apos;s nutraceuticals. Achieved 40%+
               positive lead feedback and 2% enrollment rate. Ongoing Meta ad
               campaign scaling effectively.
             </div>
