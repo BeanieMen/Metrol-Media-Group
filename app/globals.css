@@ -58,3 +58,7 @@
     @apply bg-background text-foreground;
   }
 }
+
+.roboto {
+  font-family: var(--font-pacifico);
+}
