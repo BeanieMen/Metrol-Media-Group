@@ -39,7 +39,7 @@ export default function Home() {
       <p className="font-bold text-3xl mb-6">CONTENT AND MEDIA MARKETING</p>
       <p className="text-xl font-bold mb-6">For Content Creators, Brands, and More</p>
       <p className="font-light text-gray-900">
-        Elevate your brand's online presence with our comprehensive Content and Media Marketing services. From engaging social media campaigns to compelling blog posts and captivating video content, we specialize in crafting strategies that resonate with your audience. Let our experts drive traffic, increase engagement, and ultimately boost conversions, helping you stand out in today's competitive digital landscape.
+        Elevate your brand&apos;s online presence with our comprehensive Content and Media Marketing services. From engaging social media campaigns to compelling blog posts and captivating video content, we specialize in crafting strategies that resonate with your audience. Let our experts drive traffic, increase engagement, and ultimately boost conversions, helping you stand out in today&apos;s competitive digital landscape.
       </p>
     </div>
 
@@ -47,7 +47,7 @@ export default function Home() {
       <p className="font-bold text-3xl mb-6">META ADS</p>
       <p className="text-xl font-bold mb-6">For Marketers, Brands, and More</p>
       <p className="font-light text-gray-900">
-        Elevate your online presence with our cutting-edge Meta Ads service. Our specialized ad campaigns are designed to target your audience effectively across various platforms, maximizing your reach and engagement. Whether you're a small business or a large corporation, our expert team will tailor strategies to suit your specific goals and budget. Let us help you amplify your digital presence and drive measurable results with our innovative advertising solutions.
+        Elevate your online presence with our cutting-edge Meta Ads service. Our specialized ad campaigns are designed to target your audience effectively across various platforms, maximizing your reach and engagement. Whether you&apos;re a small business or a large corporation, our expert team will tailor strategies to suit your specific goals and budget. Let us help you amplify your digital presence and drive measurable results with our innovative advertising solutions.
       </p>
     </div>
 
@@ -69,7 +69,7 @@ export default function Home() {
             />
             <div className="text-xl font-bold my-4">Lead Generation</div>
             <div className="font-light text-gray-900">
-              Generated 500,000+ leads for "Achievers Club", promoting Forever Living Products's nutraceuticals. Achieved 40%+ positive lead feedback and 2% enrollment rate. Ongoing Meta ad campaign scaling effectively.
+              Generated 500,000+ leads for &quot;Achievers Club&quot;, promoting Forever Living Products&apos;s nutraceuticals. Achieved 40%+ positive lead feedback and 2% enrollment rate. Ongoing Meta ad campaign scaling effectively.
             </div>
           </div>
           {/* Add more recent work cards here */}
