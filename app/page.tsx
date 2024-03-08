@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       {/* Hero Section */}
       <div
-        className="relative"
+        className="relative "
         style={{
           width: "100vw",
           height: "calc(100rem - 50rem)", // Increased height
