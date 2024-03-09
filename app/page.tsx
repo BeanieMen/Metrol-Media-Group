@@ -12,9 +12,9 @@ const pacifico = Chakra_Petch({ weight: '400', subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="px-4 md:px-0">
+    <main className="px-4 py-10 md:px-0">
       {/* Hero */}
-      <div className="bg-black text-white text-5xl md:text-6xl text-center py-20 md:py-20">
+      <div className="bg-black text-white text-5xl md:text-6xl text-center py-40">
         <div className="font-bold mb-4">Elevate Your Brand&apos;s Presence</div>
         <div className="text-2xl md:text-4xl mb-10">
           Forge ahead in the digital realm with Delhi&apos;s finest marketing mavens.
@@ -33,7 +33,7 @@ export default function Home() {
         <div className="text-white text-center font-semibold text-4xl mb-10">Our Services</div>
 
         <div className="grid grid-cols-1  md:grid-cols-2 mx-[5vw] lg:mx-[25vw] gap-40">
-          <Card className="bg-gray-900">
+          <Card className="bg-gray-950">
             <CardHeader>
               <CardTitle className="font-bold text-2xl">CONTENT AND MEDIA MARKETING</CardTitle>
               <CardDescription>For Content Creators, Brands, and More</CardDescription>
@@ -45,7 +45,7 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          <Card className="bg-gray-900">
+          <Card className="bg-gray-950">
             <CardHeader>
               <CardTitle className="font-bold text-2xl">META ADS</CardTitle>
               <CardDescription>For Marketers, Brands, and More</CardDescription>
@@ -63,7 +63,7 @@ export default function Home() {
       <div className="py-20 bg-black">
         <div className="text-white text-center text-4xl md:text-6xl font-bold mb-10">Recent Work</div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-5 md:mx-20 mt-8">
-          <Card className="bg-gray-800 text-white">
+          <Card className="bg-gray-950 text-white">
             <div className="w-auto">
               <Image
                 className="rounded-xl my-6 mx-auto"
