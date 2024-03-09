@@ -23,7 +23,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="bg-[#F0ECE4]">
+          <main className="bg-[#000000]">
             <Navbar></Navbar>
             {children}
           </main>
