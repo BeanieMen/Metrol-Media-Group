@@ -15,9 +15,9 @@ export default function Home() {
     <main className="px-4 md:px-0">
       {/* Hero */}
       <div className="bg-black text-white text-5xl md:text-6xl text-center py-20 md:py-20">
-        <div className="font-bold mb-4">Elevate Your Brand's Presence</div>
+        <div className="font-bold mb-4">Elevate Your Brand&apos;s Presence</div>
         <div className="text-2xl md:text-4xl mb-10">
-          Forge ahead in the digital realm with Delhi's finest marketing mavens.
+          Forge ahead in the digital realm with Delhi&apos;s finest marketing mavens.
         </div>
         <Image
           className="mx-auto min-w-full"
@@ -40,7 +40,7 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <p className="text-lg font-light">
-                Elevate your brand's online presence with our comprehensive Content and Media Marketing services. From engaging social media campaigns to compelling blog posts and captivating video content, we specialize in crafting strategies that resonate with your audience. Let our experts drive traffic, increase engagement, and ultimately boost conversions, helping you stand out in today's competitive digital landscape.
+                Elevate your brand&apos;s online presence with our comprehensive Content and Media Marketing services. From engaging social media campaigns to compelling blog posts and captivating video content, we specialize in crafting strategies that resonate with your audience. Let our experts drive traffic, increase engagement, and ultimately boost conversions, helping you stand out in today&apos;s competitive digital landscape.
               </p>
             </CardContent>
           </Card>
@@ -52,7 +52,7 @@ export default function Home() {
             </CardHeader>
             <CardContent>
               <p className="text-lg font-light">
-                Elevate your online presence with our cutting-edge Meta Ads service. Our specialized ad campaigns are designed to target your audience effectively across various platforms, maximizing your reach and engagement. Whether you're a small business or a large corporation, our expert team will tailor strategies to suit your specific goals and budget. Let us help you amplify your digital presence and drive measurable results with our innovative advertising solutions.
+                Elevate your online presence with our cutting-edge Meta Ads service. Our specialized ad campaigns are designed to target your audience effectively across various platforms, maximizing your reach and engagement. Whether you&apos;re a small business or a large corporation, our expert team will tailor strategies to suit your specific goals and budget. Let us help you amplify your digital presence and drive measurable results with our innovative advertising solutions.
               </p>
             </CardContent>
           </Card>
@@ -74,7 +74,7 @@ export default function Home() {
             <CardContent>
               <div className="text-xl font-bold mb-4">Lead Generation</div>
               <div>
-                Generated 500,000+ leads for "Achievers Club", promoting Forever Living Products's nutraceuticals. Achieved 40%+ positive lead feedback and 2% enrollment rate. Ongoing Meta ad campaign scaling effectively.
+                Generated 500,000+ leads for &quot;Achievers Club&quot;, promoting Forever Living Products&apos;s nutraceuticals. Achieved 40%+ positive lead feedback and 2% enrollment rate. Ongoing Meta ad campaign scaling effectively.
               </div>
             </CardContent>
           </Card>
