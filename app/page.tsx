@@ -29,10 +29,10 @@ export default function Home() {
       </div>
 
       {/* Our Services */}
-      <div className="py-10">
+      <div className="py-20">
         <div className="text-white text-center font-semibold text-4xl mb-10">Our Services</div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1  md:grid-cols-2 mx-[5vw] lg:mx-[25vw] gap-40">
           <Card className="bg-gray-900">
             <CardHeader>
               <CardTitle className="font-bold text-2xl">CONTENT AND MEDIA MARKETING</CardTitle>
@@ -60,20 +60,22 @@ export default function Home() {
       </div>
 
       {/* Recent Work Section */}
-      <div className="py-10 bg-black">
+      <div className="py-20 bg-black">
         <div className="text-white text-center text-4xl md:text-6xl font-bold mb-10">Recent Work</div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mx-5 md:mx-20 mt-8">
           <Card className="bg-gray-800 text-white">
-            <Image
-              className="rounded-xl mb-6"
-              src="/ache.webp.webp"
-              width={400}
-              height={400}
-              alt="achiever"
-            />
+            <div className="w-auto">
+              <Image
+                className="rounded-xl my-6 mx-auto"
+                src="/ache.webp.webp"
+                width={400}
+                height={400}
+                alt="achiever"
+              />
+            </div>
             <CardContent>
-              <div className="text-xl font-bold mb-4">Lead Generation</div>
-              <div>
+              <div className="flex text-xl font-bold mb-4 justify-center">Lead Generation</div>
+              <div className="text-wrap">
                 Generated 500,000+ leads for &quot;Achievers Club&quot;, promoting Forever Living Products&apos;s nutraceuticals. Achieved 40%+ positive lead feedback and 2% enrollment rate. Ongoing Meta ad campaign scaling effectively.
               </div>
             </CardContent>
@@ -81,13 +83,14 @@ export default function Home() {
         </div>
       </div>
 
+
       {/* About Us Section */}
-      <div className="text-white text-center py-10 md:py-20">
-        <div className="text-4xl md:text-6xl font-bold mb-10">About Us</div>
+      <div className="text-white text-center py-20 md:py-20">
+        <div className="text-4xl md:text-6xl font-bold mb-20">About Us</div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 mx-5 md:mx-[7rem]">
-          <div>
+          <div className="flex-col justify-center my-auto">
             <div className="text-2xl font-bold mb-4">Expertising Media & Marketing since 2019</div>
-            <ul className="list-disc ml-6 font-light text-lg">
+            <ul className=" ml-6 font-light text-lg">
               <li>Largest Studio with 50+ Setups in Delhi NCR</li>
               <li>100+ successful social media accounts</li>
               <li>2.5 Cr+ annual meta ads spent</li>
