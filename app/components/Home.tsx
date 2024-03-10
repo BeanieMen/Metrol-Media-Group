@@ -129,10 +129,10 @@ export default function Home() {
             {/* Footer */}
             <div className="h-[1px] w-full bg-slate-500"></div>
             <div className="py-20 flex-col text-white font-extralight">
-                <p className='flex items-center justify-center  '>
+                <p className='flex items-center text-center justify-center  '>
                     © 2024 METROL MEDIA PRIVATE LIMITED
                 </p>
-                <p className="flex items-center justify-center">
+                <p className="flex items-center text-center  justify-center">
                     ALL RIGHTS RESERVED
                 </p>
             </div>
