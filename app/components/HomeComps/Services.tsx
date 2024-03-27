@@ -9,9 +9,9 @@ import {
 export default function Services() {
     return (
         <>
-            <div className="py-8 px-4 md:py-20 md:px-0 flex justify-center">
+            <div className="py-8 px-4 md:py-20 md:px-0 flex justify-center bg-graident-to-b bg-gradient-to-b from-[#081835] via-black to-[#081835]">
                 <div className="max-w-screen-lg">
-                    <div className="text-white text-center text-4xl md:text-6xl font-bold mb-6 md:mb-10">Our Services</div>
+                    <div className="text-white text-center text-4xl md:text-5xl font-bold mb-6 md:mb-10">Our <span className="underline decoration-blue-600 decoration-[10px]">Services</span></div>
 
                     <div className="flex flex-col md:flex-row md:justify-center gap-6 lg:gap-40">
                         <Card className="bg-gray-950 flex-1">
