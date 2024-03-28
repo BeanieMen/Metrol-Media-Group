@@ -1,36 +1,46 @@
-import Image from "next/image";
+import Video from 'next-video';
 
 export default function About() {
-    return (
-        <>
-            <div className="text-white text-center py-20 md:py-20">
-                <div className="text-4xl md:text-6xl font-bold mb-20">About Us</div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-20 mx-5 md:mx-[7rem]">
-                    <div className="flex flex-col justify-center my-auto">
-                        <div className="text-2xl font-bold mb-4">Expertising Media & Marketing since 2019</div>
-                        <ul className="ml-6 lex flex-col gap-y-2 font-light sm:text-sm lg:text-lg flex flex-wrap">
-                            <li className="flex-grow flex-shrink">
-                                Largest Studio with 50+ Setups in Delhi NCR
-                            </li>
-                            <li className="flex-grow flex-shrink">
-                                100+ successful social media accounts
-                            </li>
-                            <li className="flex-grow flex-shrink">
-                                2.5 Cr+ annual meta ads spent
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <Image
-                            className="rounded-lg"
-                            src="/about.jpg"
-                            width={500}
-                            height={400}
-                            alt="about"
-                        />
-                    </div>
-                </div>
+  return (
+    <>
+      <div className="text-white text-center py-20 md:py-20">
+        <div className="text-4xl md:text-5xl font-bold mb-20">
+          What our clients have to say <br /> about us
+        </div>
+        <div className="max-w-5xl mx-auto gap-20 flex justify-center">
+          <div className="justify-right">
+            <Video
+              className="rounded-t-2xl border-0"
+              src="https://scalex.club/wp-content/uploads/2024/01/Ankur-Testimonial.mp4"
+            />
+
+            <div className="flex-col flex  bg-[#474BFA] bg-opacity-50 py-5 rounded-b-2xl">
+              <span className="flex text-3xl font-bold items-center mx-auto">
+                Ankur Warikoo
+              </span>
+              <span className="text-2xl font-bold">
+                Serial Entrepreneur & Content Creator
+              </span>
             </div>
-        </>
-    );
+          </div>
+
+          <div className="justify-center">
+            <Video
+              className="rounded-t-2xl border-0"
+              src="https://scalex.club/wp-content/uploads/2024/01/Purushottam-Testimonial.mp4"
+            />
+
+            <div className="flex-col flex  bg-[#474BFA] bg-opacity-50 py-5 rounded-b-2xl">
+              <span className="flex text-3xl font-bold items-center mx-auto">
+                Ankur Warikoo
+              </span>
+              <span className="text-2xl font-bold">
+                Serial Entrepreneur & Content Creator
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
 }

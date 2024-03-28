@@ -103,11 +103,15 @@ export default function Home() {
 
         <ScrollAnimation>
           <Services></Services>
-        </ScrollAnimation>
 
-        <ScrollAnimation>
+          <div className="flex flex-col pt-20 w-screen bg-[#102e66]">
+            <div className="text-4xl md:text-5xl mx-auto text-center font-bold mb-20">
+              What our clients have to say <br /> about us
+            </div>
+            <TestimonialSlider testimonials={testimonials} />
+          </div>
           <div className="bg-gradient-to-b  from-[#102e66] to-[#0F151D]">
-            <div className="max-w-3xl flex bg-[#1F2563] mx-auto py-10 px-5 rounded-xl bg-opacity-50 border border-gray-700">
+            <div className="max-w-3xl flex bg-[#1F2563] mx-auto py-10  px-5 rounded-xl bg-opacity-50 border border-gray-700">
               <div className="bg-[#474BFA] font-bold p-10 pr-28 w-fit rounded-l-[2500px] rounded-r-full ">
                 <div className="text-md max-w-[15rem]">
                   No Difficulty. <br /> Just one Goal -
@@ -131,24 +135,9 @@ export default function Home() {
             </div>
           </div>
         </ScrollAnimation>
-
-
-        {/* Testimonial Section */}
-        <ScrollAnimation>
-          <div className="flex flex-col mt-20 w-screen">
-
-          <TestimonialSlider testimonials={testimonials} />
-          <TestimonialSlider testimonials={testimonials.reverse()} />
-          </div>
-        </ScrollAnimation>
-
-        <ScrollAnimation>
-          <About></About>
-        </ScrollAnimation>
-
       </main>
-
-      {/* Footer */}
+      {/* 
+      Footer
       <div className="h-[1px] w-full bg-slate-500"></div>
       <div className="py-20 flex-col text-white font-extralight">
         <p className="flex items-center text-center justify-center  ">
@@ -157,7 +146,7 @@ export default function Home() {
         <p className="flex items-center text-center  justify-center">
           ALL RIGHTS RESERVED
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }
