@@ -1,45 +1,65 @@
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
-
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 export default function Services() {
-    return (
-        <>
-            <div className="py-8 px-4 md:py-20 md:px-0 flex justify-center bg-graident-to-b bg-gradient-to-b from-[#081835] via-black to-[#081835]">
-                <div className="max-w-screen-lg">
-                    <div className="text-white text-center text-4xl md:text-5xl font-bold mb-6 md:mb-10">Our <span className="underline decoration-blue-600 decoration-[10px]">Services</span></div>
+  return (
+    <>
+      <div className="py-8 px-4 md:py-20 md:px-0 flex justify-center bg-gradient-to-b from-[#102e66]  via-[#0F151D] to-[#0F151D]">
+        <div>
+          <div className="text-white text-center text-4xl md:text-5xl font-bold mb-20">
+            Our{" "}
+            <span className="underline decoration-blue-600 decoration-[10px]">
+              Services
+            </span>
+          </div>
 
-                    <div className="flex flex-col md:flex-row md:justify-center gap-6 lg:gap-40">
-                        <Card className="bg-gray-950 flex-1">
-                            <CardHeader>
-                                <CardTitle className="font-bold text-xl md:text-3xl">CONTENT AND MEDIA MARKETING</CardTitle>
-                                <CardDescription>For Content Creators, Brands, and More</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <p className="text-sm md:text-lg font-light">
-                                    Elevate your brand&apos;s online presence with our comprehensive Content and Media Marketing services. From engaging social media campaigns to compelling blog posts and captivating video content, we specialize in crafting strategies that resonate with your audience. Let our experts drive traffic, increase engagement, and ultimately boost conversions, helping you stand out in today&apos;s competitive digital landscape.
-                                </p>
-                            </CardContent>
-                        </Card>
-
-                        <Card className="bg-gray-950 flex-1 lg:mt-0">
-                            <CardHeader>
-                                <CardTitle className="font-bold text-xl md:text-3xl">META ADS</CardTitle>
-                                <CardDescription>For Marketers, Brands, and More</CardDescription>
-                            </CardHeader>
-                            <CardContent>
-                                <p className="text-sm md:text-lg font-light">
-                                    Elevate your online presence with our cutting-edge Meta Ads service. Our specialized ad campaigns are designed to target your audience effectively across various platforms, maximizing your reach and engagement. Whether you&apos;re a small business or a large corporation, our expert team will tailor strategies to suit your specific goals and budget. Let us help you amplify your digital presence and drive measurable results with our innovative advertising solutions.
-                                </p>
-                            </CardContent>
-                        </Card>
-                    </div>
-                </div>
+          <div className="flex flex-col gap-y-10 max-w-4xl">
+            <div className="flex gap-x-5  bg-[#161a42] p-5 bg-opacity-60 h-[17.5rem] rounded-2xl border border-gray-700">
+              <Image
+                className="rounded-xl"
+                src="https://scalex.club/wp-content/uploads/2024/03/compres.gif"
+                alt="gif"
+                width={350}
+                height={400}
+              />
+              <div className="flex flex-col justify-center">
+                <h1 className="text-3xl font-bold">Performance Marketing</h1>
+                <p className="text-xl mt-3">
+                  Boost your monthly profits and outrank your competition with
+                  the help of our Coaching Industry Experienced Account
+                  Managers. We do media buying for you on Meta & Google.{" "}
+                </p>
+              </div>
             </div>
-        </>
-    )
+
+            <div className="flex gap-x-5  bg-[#161a42] p-5 bg-opacity-60 h-[17.5rem] rounded-2xl border border-gray-700">
+              <div className="flex flex-col justify-center">
+                <h1 className="text-3xl font-bold">Meta Ads</h1>
+                <p className="text-xl mt-3">
+                  Elevate your brand with Meta Ads. Tailored campaigns for all
+                  sizes. Maximize online presence with top-notch advertising
+                  strategies. Boost engagement today!
+                </p>
+              </div>
+              <Image
+                className="rounded-xl"
+                src="https://scalex.club/wp-content/uploads/2024/03/BusinessStrategy-ezgif.com-video-to-gif-converter.gif"
+                alt="gif"
+                width={400}
+                height={400}
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex flex-col bg-gradient-to-b from-[#0F151D] to-[#102e66] pb-20">
+        <Button className="text-white rounded-full px-10 text-2xl w-fit mx-auto bg-[#4437f7]">
+          Lets Talk
+        </Button>
+        <div className="mx-auto mt-5 font-light">
+          Connect with us to scale your business
+        </div>
+      </div>
+    </>
+  );
 }

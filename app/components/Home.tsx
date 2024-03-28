@@ -92,42 +92,60 @@ const testimonials: Testimonial[] = [
 export default function Home() {
   return (
     <div>
-      {/* <Navbar></Navbar> */}
       <main className=" md:px-0">
-        {/* Hero */}
         <ScrollAnimation>
           <Hero></Hero>
         </ScrollAnimation>
 
         <ScrollAnimation>
-          <div className="w-full h-20 bg-[#081835]"></div>
+          <div className="w-full h-20 bg-[#102e66]"></div>
         </ScrollAnimation>
 
-        {/* Our Services */}
         <ScrollAnimation>
           <Services></Services>
         </ScrollAnimation>
 
-        {/* Recent Work Section */}
         <ScrollAnimation>
-          <Work></Work>
+          <div className="bg-gradient-to-b  from-[#102e66] to-[#0F151D]">
+            <div className="max-w-3xl flex bg-[#1F2563] mx-auto py-10 px-5 rounded-xl bg-opacity-50 border border-gray-700">
+              <div className="bg-[#474BFA] font-bold p-10 pr-28 w-fit rounded-l-[2500px] rounded-r-full ">
+                <div className="text-md max-w-[15rem]">
+                  No Difficulty. <br /> Just one Goal -
+                </div>
+                <div className="text-3xl">Profits</div>
+              </div>
+
+              <div className="max-w-xl flex ml-5 text-lg my-auto flex-col">
+                We are hyper focused on increasing your profits, month over
+                month. <br />
+                <span>
+                  <span className="bg-gray-400 bg-opacity-25 w-fit px-2 rounded-md">
+                    No fluff. High impact. No ad spend wasted.
+                  </span>{" "}
+                  We leverage learnings from thousands of experiments with
+                  successful EdTech brands and Coaches to create a robust
+                  marketing engine which generates compounding growth for your
+                  business, rather than linear growth.
+                </span>
+              </div>
+            </div>
+          </div>
         </ScrollAnimation>
 
-        {/* About Us Section */}
+
+        {/* Testimonial Section */}
+        <ScrollAnimation>
+          <div className="flex flex-col mt-20 w-screen">
+
+          <TestimonialSlider testimonials={testimonials} />
+          <TestimonialSlider testimonials={testimonials.reverse()} />
+          </div>
+        </ScrollAnimation>
+
         <ScrollAnimation>
           <About></About>
         </ScrollAnimation>
 
-        {/* Testimonial Section */}
-        <ScrollAnimation>
-          <div className="flex flex-col mt-20">
-            <div className="text-white text-center text-4xl md:text-6xl font-bold mb-10">
-              Testimonials
-            </div>
-
-            <TestimonialSlider testimonials={testimonials} />
-          </div>
-        </ScrollAnimation>
       </main>
 
       {/* Footer */}
