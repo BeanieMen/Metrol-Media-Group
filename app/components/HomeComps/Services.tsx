@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 export default function Services() {
   return (
     <>
-      <div className=" px-4 md:px-0 flex justify-center bg-gradient-to-b from-[#102e66]  via-[#0F151D] to-[#0F151D]">
+      <div className=" px-4 md:px-0 flex justify-center bg-black">
         <div>
           <div className="text-white text-center text-4xl md:text-5xl font-bold mb-20">
             Our{" "}
@@ -57,7 +57,7 @@ export default function Services() {
         </div>
       </div>
 
-      <div className="flex flex-col bg-gradient-to-b from-[#0F151D] to-[#102e66] pb-20">
+      <div className="flex flex-col bg-black py-20">
         <Button className="text-white rounded-full px-10 text-2xl w-fit mx-auto bg-[#4437f7]">
           Lets Talk
         </Button>

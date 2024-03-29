@@ -4,16 +4,17 @@ const teko = Teko({subsets: ["latin"]})
 
 import { Button } from "@/components/ui/button";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+
 export default function Hero() {
   return (
-    <div className="flex-col bg-gradient-to-b from-[#0F151D] to-[#102e66] h-fit">
-      <div className="flex justify-center pt-10 z-10">
-        <Image src={"/metrol.png"} alt="telescope" width={200} height={200} />
+    <div className="flex-col bg-black h-fit">
+      <div className="flex justify-center pt-10">
+        <Image src={"/metrol.png"} alt="telescope" width={150} height={150} />
       </div>
       <div className="h-[40rem] w-full rounded-md relative flex flex-col items-center justify-center antialiased">
-        <div className="max-w-lg relative z-20 mt-5 ">
-          <div className="w-fit px-5 py-3 text-white text-xl mx-auto border-gray-500 border font-bold rounded-full bg-gray-500 bg-opacity-30 -mb-5">
-            No Hassle or Difficulty. Just one Goal -
+        <div className="max-w-lg">
+          <div className="w-fit px-5 py-3 text-white text-xl mx-auto border-gray-500 border font-bold rounded-full bg-gray-500 bg-opacity-30">
+            No Hassle or Difficulty. Just one Goal -{" "}
             <span className="text-white text-xl font-bold rounded-full bg-pink-500 px-2 py-[0.25rem]">
               Profits
             </span>

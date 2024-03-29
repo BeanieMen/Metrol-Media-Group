@@ -26,8 +26,8 @@ export default function HomeWrapper() {
       <motion.div
         className="bg-white w-full h-full fixed top-0 left-0 z-50 flex items-center justify-center"
         initial={{ translateY: 0 }}
-        animate={{ translateY: "-100vh" }}
-        exit={{ translateY: 0 }}
+        animate={{ translateY: "-100vh"}}
+        exit={{display: "none"}}
         transition={{ duration: 0.5, delay: 0.2 }}
         style={{ transformOrigin: "bottom left" }}
         onAnimationComplete={handleAnimationComplete}

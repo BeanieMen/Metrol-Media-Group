@@ -23,7 +23,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <main className="bg-[#0F151D]">
+          <main className="bg-black">
             {children}
           </main>
         </ThemeProvider>
