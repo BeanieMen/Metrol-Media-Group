@@ -55,8 +55,8 @@ const testimonials: Testimonial[] = [
 
 export default function About() {
   return (
-    <div>
-      <div className="flex flex-col pt-20 w-screen bg-black">
+    <div className="mx-5">
+      <div className="flex flex-col pt-20 w-full bg-black">
         <div className="text-4xl md:text-5xl mx-auto text-center font-bold mb-20">
           What our{" "}
           <span className="underline decoration-blue-600 underline-offset-2 decoration-[7px]">
@@ -64,34 +64,34 @@ export default function About() {
           </span>{" "}
           say about us ❤️
         </div>
-        <div className="mx-auto justify-center gap-20 max-w-5xl grid grid-cols-2">
+        <div className="mx-auto justify-center gap-20 max-w-5xl flex flex-col md:flex-row ">
           <ScrollAnimation>
-          <div className="bg-[#1E245C] flex flex-col rounded-xl w-full">
+          <div className="bg-[#1E245C] flex flex-col rounded-xl w-full md:w-[30vw]">
               <iframe
-                className="rounded-2xl border-0 w-full h-auto aspect-video"
+                className="rounded-2xl border-0 w-full md:w-[30vw] h-auto aspect-video"
                 src="https://scalex.club/wp-content/uploads/2024/01/Ankur-Testimonial.mp4"
               />
-              <div className="pb-5 items-center">
+              <div className="pb-5 items-center h-28">
                 <span className="flex justify-center text-3xl mt-4 font-bold">
                   Ankur Warikoo
                 </span>
-                <span className="flex justify-center text-xl">
+                <span className="flex justify-center text-center text-xl">
                   Serial Entrepreneur & Content Creator
                 </span>
               </div>
             </div>
           </ScrollAnimation>
           <ScrollAnimation>
-            <div className="bg-[#1E245C] flex flex-col rounded-xl w-full">
+            <div className="bg-[#1E245C] flex flex-col rounded-xl w-full md:w-full lg:w-[30vw]">
               <iframe
-                className="rounded-2xl border-0 w-full h-auto aspect-video"
+                className="rounded-2xl border-0 w-full md:w-[30vw] h-auto aspect-video"
                 src="https://scalex.club/wp-content/uploads/2024/01/Purushottam-Testimonial.mp4"
               />
-              <div className="pb-5 items-center">
+              <div className="pb-5 items-center h-28">
                 <span className="flex justify-center text-3xl mt-4 font-bold">
                   Purushottam
                 </span>
-                <span className="flex justify-center text-xl">
+                <span className="flex justify-center text-center text-xl">
                   Millionaire Course Creator
                 </span>
               </div>
