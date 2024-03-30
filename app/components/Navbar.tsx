@@ -1,24 +1,41 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const [scrollPosition, setScrollPosition] = useState<number>(0);
+  const [opacity, setOpacity] = useState<number>(0);
+
+  const handleScroll = () => {
+    setScrollPosition(window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    // If scroll position is greater than 0, set opacity to 1 with a transition
+    if (scrollPosition > 0) {
+      setOpacity(1);
+    } else {
+      setOpacity(0);
+    }
+  }, [scrollPosition]);
+
   return (
-    <nav className="w-full fixed top-0 left-0 z-50 bg-black shadow-md py-3">
-      <div className="w-full flex justify-between items-center  md:px-8"> {/* Adjusted padding for responsiveness */}
-        <div className="flex items-center px-2">
-          <Image src={"/metrol.png"} alt="telescope" width={150} height={100} /> {/* Adjusted image size */}
-        </div>
-        <div className="flex md:hidden gap-2 px-4"> {/* Show on small screens only */}
-          <Button className="rounded-full border-white border bg-black hover:bg-white hover:border hover:text-black text-white"> {/* Adjusted button size */}
-            <p className="text-sm">Call Us</p> {/* Adjusted text size */}
-          </Button>
-        </div>
-        <div className="hidden md:flex gap-2 px-4"> {/* Hide on small screens */}
-          <Button className="rounded-full border-white border bg-black hover:bg-white hover:border hover:text-black text-white"> {/* Adjusted button size */}
-            <p className="text-sm">Call Us</p> {/* Adjusted text size */}
-          </Button>
-        </div>
+    <motion.nav
+      className="w-full fixed top-0 left-0 z-50 rounded-b-3xl border border-t-0 border-l-0 border-r-0"
+      style={{
+        backgroundColor: `rgba(32, 37, 94, ${opacity})`,
+        borderColor: `rgba(75, 85, 99, ${opacity})`,
+        transition: "background-color 0.5s, border-color 0.5s",
+      }}
+    >
+      <div className="flex justify-center items-center h-full py-3">
+        <Image src={"/metrol.png"} alt="telescope" width={125} height={125} />
       </div>
-    </nav>
+    </motion.nav>
   );
 }

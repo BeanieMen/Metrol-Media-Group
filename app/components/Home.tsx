@@ -5,8 +5,10 @@ import Hero from "./HomeComps/Hero";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
+import Navbar from "./Navbar";
 import About from "./HomeComps/About";
 import Footer from "./HomeComps/Footer";
+import Podcast from "./HomeComps/Podcast";
 export function ScrollAnimation({ children }: any) {
   const controls = useAnimation();
   const [ref, inView] = useInView();
@@ -36,6 +38,7 @@ export default function Home() {
   return (
     <div>
       <main>
+        <Navbar></Navbar>
         <ScrollAnimation>
           <Hero></Hero>
         </ScrollAnimation>
@@ -45,6 +48,7 @@ export default function Home() {
         </ScrollAnimation>
 
           <About></About>
+          <Podcast></Podcast>
           <Footer></Footer>
       </main>
     </div>

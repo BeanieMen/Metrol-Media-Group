@@ -35,7 +35,5 @@ export default function HomeWrapper() {
         <Curtain></Curtain>
       </motion.div>
     </>
-
-
   );
 }

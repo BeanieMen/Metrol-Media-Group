@@ -7,10 +7,7 @@ import { BackgroundBeams } from "@/components/ui/background-beams";
 
 export default function Hero() {
   return (
-    <div className="flex-col bg-black h-fit">
-      <div className="flex justify-center pt-10">
-        <Image src={"/metrol.png"} alt="telescope" width={150} height={150} />
-      </div>
+    <div className="flex-col bg-gradient-to-b from-[#20255E] px-5 to-black h-fit pt-20 md:pt-0">
       <div className="h-[40rem] w-full rounded-md relative flex flex-col items-center justify-center antialiased">
         <div className="max-w-lg">
           <div className="w-fit px-5 py-3 text-white text-xl mx-auto border-gray-500 border font-bold rounded-full bg-gray-500 bg-opacity-30">
