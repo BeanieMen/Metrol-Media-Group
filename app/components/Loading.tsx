@@ -6,9 +6,9 @@ export default function Curtain() {
     <div className="w-screen h-screen bg-white flex flex-col justify-center items-center">
       <Image className="invert" src={"/metrol.png"} alt="loading" height={300} width={300} />
       <motion.div
-        className="bg-[#3a8fff] w-[5rem] h-2 mt-4"
+        className="bg-[#3a8fff] w-[10rem] h-2 mt-4"
         initial={{ width: 0 }}
-        animate={{ width: "15rem" }}
+        animate={{ width: "20rem" }}
         transition={{ duration: 0.2 }}
       />
     </div>

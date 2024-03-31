@@ -28,7 +28,7 @@ export default function HomeWrapper() {
         initial={{ translateY: 0 }}
         animate={{ translateY: "-100vh" }}
         exit={{ translateY: 0 }}
-        transition={{ duration: 0.5, delay: 0.2 }}
+        transition={{ duration: 0.75, delay: 0.2 }}
         style={{ transformOrigin: "bottom left" }}
         onAnimationComplete={handleAnimationComplete}
       >
